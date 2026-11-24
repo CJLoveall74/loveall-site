@@ -84,16 +84,35 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 .footer-brand { color: var(--otto-text); font-weight: 700; }
 footer a { color: var(--otto-text-soft); text-decoration: none; }
 footer a:hover { color: var(--otto-link); text-decoration: underline; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 24px; }
+.resume-intro { padding: 104px 0 96px; }
+.resume-intro h1 { margin-bottom: 16px; }
+.resume-lead { margin-bottom: 8px; font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 600; }
+.resume-location { margin-bottom: 28px; color: var(--otto-text-soft); }
+.resume-section { display: grid; grid-template-columns: minmax(200px, .7fr) minmax(0, 1.3fr); gap: 64px; padding: 72px 0; border-top: 1px solid var(--otto-border); }
+.resume-section-heading h2 { margin: 20px 0 0; font-size: clamp(2rem, 3.5vw, 3rem); letter-spacing: -.05em; }
+.resume-entry { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px; padding: 24px 0; border-top: 1px solid var(--otto-border); }
+.resume-entry:last-child { border-bottom: 1px solid var(--otto-border); }
+.resume-date { margin-bottom: 0; color: var(--otto-text-soft); font-size: .85rem; line-height: 1.6; }
+.resume-entry h3 { margin-bottom: 8px; font-size: 1.05rem; line-height: 1.4; }
+.resume-company { margin: 0; color: var(--otto-text-soft); font-size: .95rem; line-height: 1.7; }
+.resume-note { color: var(--otto-text-soft); }
+.resume-skills { display: flex; flex-wrap: wrap; align-content: flex-start; gap: 12px; }
+.resume-skills span { padding: 10px 14px; border: 1px solid var(--otto-border); border-radius: 8px; background: var(--otto-panel); color: var(--otto-text); font-size: .9rem; }
 @media (max-width: 800px) {
   .page { width: min(100% - 40px, 1200px); }
   .hero { grid-template-columns: 1fr; gap: 48px; padding: 72px 0 80px; }
   .hero-graphic { min-height: 260px; }
   .interests { grid-template-columns: 1fr; gap: 32px; padding: 72px 0; }
+  .resume-intro { padding: 72px 0; }
+  .resume-section { grid-template-columns: 1fr; gap: 32px; padding: 56px 0; }
 }
 @media (max-width: 480px) {
   .site-header { align-items: flex-start; flex-direction: column; padding: 24px 0; }
   nav { gap: 24px; }
+  nav { flex-wrap: wrap; }
   .hero-actions { align-items: stretch; flex-direction: column; }
+  .resume-entry { grid-template-columns: 1fr; gap: 8px; }
   footer { align-items: flex-start; flex-direction: column; gap: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
