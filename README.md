@@ -1,6 +1,6 @@
-# Chris Loveall's personal site
+# Loveall.tech
 
-A small, static About page intended for GitHub Pages and `loveall.tech`.
+A static site, starting with an About page, intended for GitHub Pages and `loveall.tech`.
 There is no build step or runtime dependency.
 
 ## Editing
